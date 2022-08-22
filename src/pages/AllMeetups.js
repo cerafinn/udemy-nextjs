@@ -1,3 +1,5 @@
+import MeetupList from '../components/meetups/MeetupList';
+
 const TEST_DATA = [
   {
     id: 'm1',
@@ -20,7 +22,12 @@ const TEST_DATA = [
 ];
 
 function AllMeetups() {
-  return <div>All Meetups Page</div>
+  return (
+    <section>
+      <h1>All Meetups</h1>
+      <MeetupList meetups={TEST_DATA} />
+    </section>
+  )
 }
 
 export default AllMeetups;
